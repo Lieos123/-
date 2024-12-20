@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>识别结果</title>
+</head>
+<body>
+    <h1>识别结果</h1>
+    <ul>
+        {% for name in names %}
+            <li>{{ name }}</li>
+        {% endfor %}
+    </ul>
+    <br>
+    <h2>可信度</h2>
+    <ul>
+        {% for confidence in confidences %}
+            <li>{{confidence}}</li>
+        {% endfor %}
+    </ul>
+
+</body>
+</html>
